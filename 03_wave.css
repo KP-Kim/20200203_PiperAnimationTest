@@ -1,0 +1,41 @@
+
+.waves {
+    width: 300px;
+    position: absolute;
+    left: 350px;
+    top: 200px;
+    border: 1px solid black;
+    height: 600px;
+    width: 300px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.feet {
+    width: 70px;
+    position: absolute;
+    top: 275px;
+    left: 115px;
+    
+}
+
+.emerald {
+    position: relative;
+    width: 650px;
+    top: 500px;
+    left: -70px;
+}
+
+.blue {
+    position: relative;
+    width: 650px;
+    top: 20px;
+    left: -120px;
+}
+
+.purple {
+    position: relative;
+    width: 1050px;
+    top: -500px;
+    left: -400px;
+}
