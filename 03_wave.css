@@ -11,7 +11,7 @@
     position: absolute;
     left: 350px;
     top: 200px;
-    border: 1px solid red;
+    border: 1px solid black;
     height: 600px;
     width: 300px;
     overflow: hidden;
@@ -28,9 +28,9 @@
     top: 550px;
     left: -450px;
     z-index: 2;
-    /* animation: swell 7s ease -1.25s infinite,
+    animation: swell 7s ease -1.25s infinite,
     wave 5s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite;
-    animation-play-state: paused; */
+    animation-play-state: paused;
     cursor: pointer;
 }
 
@@ -39,9 +39,9 @@
     width: 650px;
     top: 50px;
     left: -100px;
-    /* animation: swell 6s ease -1.25s infinite,
+    animation: swell 6s ease -1.25s infinite,
     wave 6s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite;
-    animation-play-state: running; */
+    animation-play-state: running;
     cursor: pointer;
 }
 
@@ -50,9 +50,9 @@
     width: 900px;
     top: -450px;
     left: -320px;
-    /* animation: swell 5s ease -1.25s infinite, 
+    animation: swell 5s ease -1.25s infinite, 
     wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite;
-    animation-play-state: running; */
+    animation-play-state: running;
     cursor: pointer;
 }
 
