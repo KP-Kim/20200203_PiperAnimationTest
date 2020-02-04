@@ -1,5 +1,6 @@
-.feet {
+#feet {
     position: absolute;
+    z-index: 1;
     width: 70px;
     top: 490px;
     left: 475px;
@@ -14,9 +15,6 @@
     height: 600px;
     width: 300px;
     overflow: hidden;
-    /* animation: moveup 2.5s ease-out forwards infinite;
-    animation-play-state: paused;
-    cursor: pointer; */
 }
 
 #emerald {
@@ -24,10 +22,10 @@
     width: 650px;
     top: 500px;
     left: -70px;
-    animation: moveupmid 1s ease-out forwards;
-    animation-play-state: paused;
+    animation: swell 7s ease -1.25s infinite,
+    wave 5s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite;
+    animation-play-state: running;
     cursor: pointer;
-    animation-delay: 1s;
 }
 
 #blue {
@@ -35,21 +33,57 @@
     width: 650px;
     top: 20px;
     left: -120px;
-    animation: moveupslow 1s ease-out forwards;
-    animation-play-state: paused;
+    animation: swell 6s ease -1.25s infinite,
+    wave 6s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite;
+    animation-play-state: running;
     cursor: pointer;
-    animation-delay: 1s;
 }
 
-#purple {
+.purple {
     position: relative;
     width: 1050px;
-    top: -500px;
+    top: -510px;
     left: -400px;
-    animation: moveupfast 1s ease-in-out forwards;
-    animation-play-state: paused;
+    animation: swell 5s ease -1.25s infinite, 
+    wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite;
+    animation-play-state: running;
     cursor: pointer;
 }
+
+.feet {
+    transition-duration: 1s;
+    transition-property: transform;
+    outline: 0;
+}
+
+.feet.active {
+    transform: translateY(50px);
+}
+
+.transition {
+    transform: rotate(45deg)
+}
+
+
+@keyframes wave {
+    0% 100% {
+      margin-left: 0;
+    }
+    50% {
+      margin-left: -20px;
+    }
+}
+  
+@keyframes swell {
+    0%, 100% {
+      transform: translate3d(0,-15px,0);
+    }
+    50% {
+      transform: translate3d(0,20px,0);
+    }
+}
+  
+/* 
 
 @keyframes moveupslow {
     0%{transform: translateY(0px);}
@@ -64,4 +98,4 @@
 @keyframes moveupfast {
     0%{transform: translateY(0px);}
     100%{transform: translateY(-130px);}
-}
+} */
