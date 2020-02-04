@@ -14,7 +14,7 @@
     border: 1px solid black;
     height: 600px;
     width: 300px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 #emerald {
@@ -39,7 +39,7 @@
     cursor: pointer;
 }
 
-.purple {
+#purple {
     position: relative;
     width: 1050px;
     top: -510px;
@@ -50,23 +50,9 @@
     cursor: pointer;
 }
 
-.feet {
-    transition-duration: 1s;
-    transition-property: transform;
-    outline: 0;
-}
-
-.feet.active {
-    transform: translateY(50px);
-}
-
-.transition {
-    transform: rotate(45deg)
-}
-
 
 @keyframes wave {
-    0% 100% {
+    0%, 100% {
       margin-left: 0;
     }
     50% {

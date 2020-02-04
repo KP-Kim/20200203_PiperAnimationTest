@@ -63,14 +63,18 @@ function onClick() {
     switch (iterations) {
         case 1:
             console.log ("wave_stage_1");
-            var elem = document.getElementById("feet");
-            elem.style.transform.rotate = "0.5turn";
+            var transition = document.getElementById("blue");
+            transition.setAttribute("style", "transform: rotate(90deg); transition-duration: 3s");
             break;
         case 2:
             console.log ("wave_state_2");
+            var transition = document.getElementById("feet");
+            transition.setAttribute("style", "transform: rotate(45deg)");
             break;
         case 0:
             console.log ("write_stage_0");
+            var transition = document.getElementById("feet");
+            transition.setAttribute("style", "transform: rotate(0deg)");
             break;
         }
 
