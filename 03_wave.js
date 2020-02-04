@@ -64,12 +64,12 @@ function onClick() {
         case 1:
             console.log ("wave_stage_1");
             var transition = document.getElementById("waves");
-            transition.setAttribute("style", "transform: translateY(-100px); transition-duration: 3s");
+            transition.setAttribute("style", "transform: translateY(-200px); transition-duration: 3s");
             break;
         case 2:
             console.log ("wave_state_2");
             var transition = document.getElementById("waves");
-            transition.setAttribute("style", "transform: translateY(-200px); transition-duration: 3s");
+            transition.setAttribute("style", "transform: translateY(-300px); transition-duration: 3s");
             break;
         case 0:
             console.log ("write_stage_0");
