@@ -14,7 +14,7 @@
     border: 1px solid black;
     height: 600px;
     width: 300px;
-    overflow: visible;
+    overflow: hidden;
 }
 
 #waves {
